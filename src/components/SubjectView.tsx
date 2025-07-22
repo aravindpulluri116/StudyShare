@@ -1,15 +1,15 @@
 import React from 'react';
 import { ArrowLeft } from 'lucide-react';
-import PresentationCard from './PresentationCard';
-import { Subject, Presentation } from '../types';
+import ResourceCard from './ResourceCard';
+import { Subject, Resource } from '../types';
 
 interface SubjectViewProps {
   subject: Subject | undefined;
-  presentations: Presentation[];
+  resources: Resource[];
   onBack: () => void;
 }
 
-export default function SubjectView({ subject, presentations, onBack }: SubjectViewProps) {
+export default function SubjectView({ subject, resources, onBack }: SubjectViewProps) {
   if (!subject) return null;
 
   return (
@@ -35,21 +35,21 @@ export default function SubjectView({ subject, presentations, onBack }: SubjectV
       <div className="flex items-center justify-between animate-slide-up" style={{ animationDelay: '0.2s' }}>
         <div className="flex items-center space-x-4">
           <div className="text-white/60 bg-white/10 backdrop-blur-sm px-4 py-2 rounded-full border border-white/20">
-            {presentations.length} presentation{presentations.length !== 1 ? 's' : ''} found
+            {resources.length} resource{resources.length !== 1 ? 's' : ''} found
           </div>
         </div>
       </div>
 
-      {/* Presentations Grid */}
-      {presentations.length > 0 ? (
+      {/* Resources Grid */}
+      {resources.length > 0 ? (
         <div className="animate-slide-up grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8" style={{ animationDelay: '0.3s' }}>
-          {presentations.map((presentation, index) => (
+          {resources.map((resource, index) => (
             <div
-              key={presentation.id}
+              key={resource.id}
               className="animate-slide-up"
               style={{ animationDelay: `${0.1 * index}s` }}
             >
-              <PresentationCard presentation={presentation} />
+              <ResourceCard resource={resource} />
             </div>
           ))}
         </div>
@@ -58,9 +58,9 @@ export default function SubjectView({ subject, presentations, onBack }: SubjectV
           <div className="w-24 h-24 bg-white/10 rounded-full flex items-center justify-center mx-auto mb-6 animate-pulse-glow">
             <ArrowLeft className="h-12 w-12 text-white/40" />
           </div>
-          <div className="text-white/40 text-xl mb-3">No presentations found</div>
+          <div className="text-white/40 text-xl mb-3">No resources found</div>
           <div className="text-white/60 text-sm max-w-md mx-auto">
-            Be the first to upload a presentation for {subject.name}! Check back later for new content.
+            Be the first to upload a resource for {subject.name}! Check back later for new content.
           </div>
         </div>
       )}

@@ -1,135 +1,162 @@
-import { Presentation, Subject } from '../types';
+import { Resource, Subject } from '../types';
 
 export const subjects: Subject[] = [
   {
-    id: 'computer-organization',
-    name: 'Computer Organization',
-    icon: 'Cpu',
-    color: 'from-blue-500 to-blue-600',
-    presentationCount: 3,
-    description: 'Computer Organization and Architecture',
-    subjectCode: '9CC56'
-  },
-  {
-    id: 'database-management',
-    name: 'Database Management',
-    icon: 'Database',
-    color: 'from-purple-500 to-purple-600',
-    presentationCount: 4,
-    description: 'Database Management Systems',
-    subjectCode: '9FC04'
-  },
-  {
-    id: 'qualitative-analysis',
-    name: 'Qualitative Analysis and Logical Reasoning',
-    icon: 'LineChart',
-    color: 'from-green-500 to-green-600',
-    presentationCount: 3,
-    description: 'Qualitative Analysis and Logical Reasoning',
-    subjectCode: '9HC16'
-  },
-  {
-    id: 'computer-organization-microprocessors',
-    name: 'Computer Organization & Microprocessors',
-    icon: 'Microscope',
-    color: 'from-red-500 to-red-600',
-    presentationCount: 3,
-    description: 'Computer Organization and Microprocessors',
-    subjectCode: '9CC54'
-  },
-  {
-    id: 'python-programming',
-    name: 'Python Programming',
-    icon: 'FileText',
-    color: 'from-yellow-500 to-yellow-600',
-    presentationCount: 3,
-    description: 'Introduction to Python Programming',
-    subjectCode: '9FC02'
-  },
-  {
-    id: 'business-economics-financial-analysis',
-    name: 'Business Economics & Financial Analysis',
-    icon: 'DollarSign',
-    color: 'from-orange-500 to-orange-600',
-    presentationCount: 4,
-    description: 'Business Economics and Financial Analysis',
-    subjectCode: '9ZC01'
-  },
-  {
-    id: 'data-structures-algorithms',
-    name: 'Design Analysis and Algorithms',
-    icon: 'Network',
-    color: 'from-indigo-500 to-indigo-600',
-    presentationCount: 6,
-    description: 'Design Analysis and Algorithms (DAA)',
-    subjectCode: '9FC05'
-  },
-  {
-    id: 'introduction-data-science',
-    name: 'Introduction to Data Science',
-    icon: 'BarChart3',
-    color: 'from-teal-500 to-teal-600',
-    presentationCount: 6,
-    description: 'Introduction to Data Science (IDS)',
-    subjectCode: '9EC16'
-  },
-  {
-    id: 'problem-solving-c',
-    name: 'Problem Solving using C',
-    icon: 'Code',
-    color: 'from-pink-500 to-pink-600',
-    presentationCount: 6,
-    description: 'Problem Solving using C (PSUC)',
-    subjectCode: '9FC01'
-  },
-  {
-    id: 'matrix-algebra-calculus',
-    name: 'Matrix Algebra and Calculus',
-    icon: 'Calculator',
-    color: 'from-cyan-500 to-cyan-600',
-    presentationCount: 5,
-    description: 'Matrix Algebra and Calculus (MAC)',
-    subjectCode: '9HC11'
-  },
-  {
-    id: 'engineering-physics',
-    name: 'Engineering Physics',
-    icon: 'Atom',
-    color: 'from-slate-500 to-slate-600',
-    presentationCount: 6,
-    description: 'Engineering Physics (EP)',
-    subjectCode: '9HC07'
-  },
-  {
-    id: 'data-structures',
-    name: 'Data Structures',
-    icon: 'Binary',
-    color: 'from-emerald-500 to-emerald-600',
-    presentationCount: 6,
-    description: 'Data Structures (DS)',
-    subjectCode: '9EC01'
+    id: 'advanced-calculus',
+    name: 'Advanced Calculus',
+    icon: 'Infinity',
+    color: 'from-violet-500 to-violet-600',
+    resourceCount: 2,
+    description: 'Advanced Calculus (AC)',
+    subjectCode: '9HC12'
   },
   {
     id: 'basic-electrical-electronics',
     name: 'Basic Electrical And Electronics Engineering',
     icon: 'Zap',
     color: 'from-amber-500 to-amber-600',
-    presentationCount: 6,
+    resourceCount: 8,
     description: 'Basic Electrical And Electronics Engineering (BEEE)',
     subjectCode: '9AC48'
+  },
+  {
+    id: 'business-economics-financial-analysis',
+    name: 'Business Economics & Financial Analysis',
+    icon: 'DollarSign',
+    color: 'from-orange-500 to-orange-600',
+    resourceCount: 4,
+    description: 'Business Economics and Financial Analysis',
+    subjectCode: '9ZC01'
+  },
+  {
+    id: 'computer-organization',
+    name: 'Computer Organization',
+    icon: 'Cpu',
+    color: 'from-blue-500 to-blue-600',
+    resourceCount: 3,
+    description: 'Computer Organization and Architecture',
+    subjectCode: '9CC56'
+  },
+  {
+    id: 'computer-organization-microprocessors',
+    name: 'Computer Organization & Microprocessors',
+    icon: 'Microscope',
+    color: 'from-red-500 to-red-600',
+    resourceCount: 3,
+    description: 'Computer Organization and Microprocessors',
+    subjectCode: '9CC54'
+  },
+  {
+    id: 'data-structures',
+    name: 'Data Structures',
+    icon: 'Binary',
+    color: 'from-emerald-500 to-emerald-600',
+    resourceCount: 8,
+    description: 'Data Structures (DS)',
+    subjectCode: '9EC01'
+  },
+  {
+    id: 'data-structures-algorithms',
+    name: 'Design and Analysis of Algorithms',
+    icon: 'Network',
+    color: 'from-indigo-500 to-indigo-600',
+    resourceCount: 6,
+    description: 'Design and Analysis of Algorithms (DAA)',
+    subjectCode: '9FC05'
+  },
+  {
+    id: 'database-management',
+    name: 'Database Management',
+    icon: 'Database',
+    color: 'from-purple-500 to-purple-600',
+    resourceCount: 4,
+    description: 'Database Management Systems',
+    subjectCode: '9FC04'
   },
   {
     id: 'engineering-chemistry',
     name: 'Engineering Chemistry',
     icon: 'Beaker',
     color: 'from-lime-500 to-lime-600',
-    presentationCount: 6,
+    resourceCount: 7,
     description: 'Engineering Chemistry (EC)',
     subjectCode: '9HC04'
+  },
+  {
+    id: 'engineering-graphics',
+    name: 'Engineering Graphics',
+    icon: 'Ruler',
+    color: 'from-rose-500 to-rose-600',
+    resourceCount: 3,
+    description: 'Engineering Graphics (EG)',
+    subjectCode: '9BC01'
+  },
+  {
+    id: 'engineering-physics',
+    name: 'Engineering Physics',
+    icon: 'Atom',
+    color: 'from-slate-500 to-slate-600',
+    resourceCount: 11,
+    description: 'Engineering Physics (EP)',
+    subjectCode: '9HC07'
+  },
+  {
+    id: 'essential-english',
+    name: 'Essential English Language Skills',
+    icon: 'BookText',
+    color: 'from-sky-500 to-sky-600',
+    resourceCount: 1,
+    description: 'Essential English Language Skills (EELS)',
+    subjectCode: '9HC01'
+  },
+  {
+    id: 'introduction-data-science',
+    name: 'Introduction to Data Science',
+    icon: 'BarChart3',
+    color: 'from-teal-500 to-teal-600',
+    resourceCount: 6,
+    description: 'Introduction to Data Science (IDS)',
+    subjectCode: '9EC16'
+  },
+  {
+    id: 'matrix-algebra-calculus',
+    name: 'Matrix Algebra and Calculus',
+    icon: 'Calculator',
+    color: 'from-cyan-500 to-cyan-600',
+    resourceCount: 6,
+    description: 'Matrix Algebra and Calculus (MAC)',
+    subjectCode: '9HC11'
+  },
+  {
+    id: 'problem-solving-c',
+    name: 'Problem Solving using C',
+    icon: 'Code',
+    color: 'from-pink-500 to-pink-600',
+    resourceCount: 7,
+    description: 'Problem Solving using C (PSUC)',
+    subjectCode: '9FC01'
+  },
+  {
+    id: 'python-programming',
+    name: 'Python Programming',
+    icon: 'FileText',
+    color: 'from-yellow-500 to-yellow-600',
+    resourceCount: 3,
+    description: 'Introduction to Python Programming',
+    subjectCode: '9FC02'
+  },
+  {
+    id: 'qualitative-analysis',
+    name: 'Qualitative Analysis and Logical Reasoning',
+    icon: 'LineChart',
+    color: 'from-green-500 to-green-600',
+    resourceCount: 3,
+    description: 'Qualitative Analysis and Logical Reasoning (QALR)',
+    subjectCode: '9HC16'
   }
 ];
 
-export const presentations: Presentation[] = [
+export const resources: Resource[] = [
   {
     id: '1',
     title: 'UNIT-1 CO',
@@ -756,5 +783,314 @@ export const presentations: Presentation[] = [
     fileSize: '3.3 MB',
     description: 'Basic Electrical and Electronics Engineering Unit 6',
     fileName: 'BEEE Unit-6.pptx'
+  },
+  {
+    id: '58',
+    title: 'EC Unit 1',
+    subject: 'engineering-chemistry',
+    subjectCode: '9HC04',
+    uploadedBy: 'Akanksha Reddy',
+    uploadDate: '2025-07-21',
+    description: 'Atomic & Molecular Structure',
+    fileSize: '1.5 MB',
+    fileName: 'EC Unit-1 Atomic & Molecular Structure.ppt'
+  },
+  {
+    id: '59',
+    title: 'EC Unit 2',
+    subject: 'engineering-chemistry',
+    subjectCode: '9HC04',
+    uploadedBy: 'Akanksha Reddy',
+    uploadDate: '2025-07-21',
+    description: 'Plastics & Lubricants',
+    fileSize: '4.1 MB',
+    fileName: 'EC Unit-2 Plastics & Lubricants.ppt'
+  },
+  {
+    id: '60',
+    title: 'EC Unit 3',
+    subject: 'engineering-chemistry',
+    subjectCode: '9HC04',
+    uploadedBy: 'Akanksha Reddy',
+    uploadDate: '2025-07-21',
+    description: 'Water Technology',
+    fileSize: '3.4 MB',
+    fileName: 'EC Unit-3  Water Technology.pptx'
+  },
+  {
+    id: '61',
+    title: 'EC Unit 4',
+    subject: 'engineering-chemistry',
+    subjectCode: '9HC04',
+    uploadedBy: 'Akanksha Reddy',
+    uploadDate: '2025-07-21',
+    description: 'Electrochemistry & Batteries',
+    fileSize: '5.7 MB',
+    fileName: 'EC Unit-4 Electrochemistry & Batteries.pptx'
+  },
+  {
+    id: '62',
+    title: 'EC Unit 5',
+    subject: 'engineering-chemistry',
+    subjectCode: '9HC04',
+    uploadedBy: 'Akanksha Reddy',
+    uploadDate: '2025-07-21',
+    description: 'Corrosion and Surface Treatment',
+    fileSize: '8.6 MB',
+    fileName: 'EC Unit-5 Corrosion and Surface Treatment.pptx'
+  },
+  {
+    id: '63',
+    title: 'EC Unit 6',
+    subject: 'engineering-chemistry',
+    subjectCode: '9HC04',
+    uploadedBy: 'Akanksha Reddy',
+    uploadDate: '2025-07-21',
+    description: 'Organic Reactions, Drugs & Spectroscopy',
+    fileSize: '2.8 MB',
+    fileName: 'EC Unit-6 Organic Reactions, Drugs & Spectroscopy.pptx'
+  },
+  {
+    id: '64',
+    title: 'DS Unit 1',
+    subject: 'data-structures',
+    subjectCode: '9EC01',
+    uploadedBy: 'Akanksha Reddy',
+    uploadDate: '2025-07-21',
+    fileSize: '3.3 MB',
+    description: 'Data Structures Unit 1',
+    fileName: 'DS UNIT- I.ppt'
+  },
+  {
+    id: '65',
+    title: 'DS Unit 2',
+    subject: 'data-structures',
+    subjectCode: '9EC01',
+    uploadedBy: 'Akanksha Reddy',
+    uploadDate: '2025-07-21',
+    fileSize: '2.3 MB',
+    description: 'Data Structures Unit 2',
+    fileName: 'DS UNIT - II.ppt'
+  },
+  {
+    id: '66',
+    title: 'DS Unit 3',
+    subject: 'data-structures',
+    subjectCode: '9EC01',
+    uploadedBy: 'Akanksha Reddy',
+    uploadDate: '2025-07-21',
+    fileSize: '2.2 MB',
+    description: 'Data Structures Unit 3',
+    fileName: 'DS UNIT - III.ppt'
+  },
+  {
+    id: '67',
+    title: 'DS Unit 4',
+    subject: 'data-structures',
+    subjectCode: '9EC01',
+    uploadedBy: 'Akanksha Reddy',
+    uploadDate: '2025-07-21',
+    fileSize: '3.1 MB',
+    description: 'Data Structures Unit 4',
+    fileName: 'DS UNIT - IV.ppt'
+  },
+  {
+    id: '68',
+    title: 'DS Unit 5',
+    subject: 'data-structures',
+    subjectCode: '9EC01',
+    uploadedBy: 'Akanksha Reddy',
+    uploadDate: '2025-07-21',
+    fileSize: '4.2 MB',
+    description: 'Data Structures Unit 5',
+    fileName: 'DS UNIT- V.ppt'
+  },
+  {
+    id: '69',
+    title: 'DS Unit 6',
+    subject: 'data-structures',
+    subjectCode: '9EC01',
+    uploadedBy: 'Akanksha Reddy',
+    uploadDate: '2025-07-21',
+    fileSize: '1.4 MB',
+    description: 'Data Structures Unit 6',
+    fileName: 'DS UNIT VI.ppt'
+  },
+  // Question Papers
+  {
+    id: '70',
+    title: 'Advanced Calculus Question Paper (Aug 2024)',
+    subject: 'advanced-calculus',
+    subjectCode: '9HC12',
+    uploadedBy: 'Akanksha Reddy',
+    uploadDate: '2025-07-21',
+    fileSize: '387 KB',
+    description: 'Regular Examination Question Paper (All Branches)',
+    fileName: 'A22-AC-(C-ALL)-31-08-2024-(Regular).pdf'
+  },
+  {
+    id: '71',
+    title: 'Advanced Calculus Question Paper (Aug 2023)',
+    subject: 'advanced-calculus',
+    subjectCode: '9HC12',
+    uploadedBy: 'Akanksha Reddy',
+    uploadDate: '2025-07-21',
+    fileSize: '296 KB',
+    description: 'Regular Examination Question Paper (All Branches)',
+    fileName: 'A22-AC-(C TO All)-28-08-2023-(Regular).pdf'
+  },
+  {
+    id: '72',
+    title: 'BEEE Question Paper (Aug 2024)',
+    subject: 'basic-electrical-electronics',
+    subjectCode: '9AC48',
+    uploadedBy: 'Akanksha Reddy',
+    uploadDate: '2025-07-21',
+    fileSize: '246 KB',
+    description: 'Regular Examination Question Paper (CSE, IT, CS, AIML, DS, IOT)',
+    fileName: 'A22-BE&EE-(CSE,IT,CS,AIML,DS,IOT)-09-08-2024-(Regular).pdf'
+  },
+  {
+    id: '73',
+    title: 'BEEE Question Paper (Aug 2023)',
+    subject: 'basic-electrical-electronics',
+    subjectCode: '9AC48',
+    uploadedBy: 'Akanksha Reddy',
+    uploadDate: '2025-07-21',
+    fileSize: '270 KB',
+    description: 'Regular Examination Question Paper (CSE, IT, AIML, DS, CS, IOT)',
+    fileName: 'A22-BEEE-(CSE,IT,AIML,DS,CS,IOT)-30-08-2023-(Regular).pdf'
+  },
+  {
+    id: '74',
+    title: 'Data Structures Question Paper (Aug 2024)',
+    subject: 'data-structures',
+    subjectCode: '9EC01',
+    uploadedBy: 'Akanksha Reddy',
+    uploadDate: '2025-07-21',
+    fileSize: '222 KB',
+    description: 'Regular Examination Question Paper (All Branches)',
+    fileName: 'A22-DS-(C-ALL)-07-08-2024-(Regular).pdf'
+  },
+  {
+    id: '75',
+    title: 'Data Structures Question Paper (Aug 2023)',
+    subject: 'data-structures',
+    subjectCode: '9EC01',
+    uploadedBy: 'Akanksha Reddy',
+    uploadDate: '2025-07-21',
+    fileSize: '241 KB',
+    description: 'Regular Examination Question Paper (All Branches)',
+    fileName: 'A22-DS-(C TO All)-23-08-2023-(Regular).pdf'
+  },
+  {
+    id: '76',
+    title: 'Engineering Chemistry Question Paper (Mar 2023)',
+    subject: 'engineering-chemistry',
+    subjectCode: '9HC04',
+    uploadedBy: 'Akanksha Reddy',
+    uploadDate: '2025-07-21',
+    fileSize: '228 KB',
+    description: 'Regular Examination Question Paper (CSE, IT, CS, AIML, DS, IOT)',
+    fileName: 'A22-EC-(CSE,IT,CS,AIML,DS,IOT)-21-03-2023-(Regular).pdf'
+  },
+  {
+    id: '77',
+    title: 'Essential English Language Skills Question Paper (Mar 2023)',
+    subject: 'essential-english',
+    subjectCode: '9HC01',
+    uploadedBy: 'Akanksha Reddy',
+    uploadDate: '2025-07-21',
+    fileSize: '152 KB',
+    description: 'Regular Examination Question Paper (CE, ECE, CS, IOT)',
+    fileName: 'A22-EELS-(CE,ECE,CS,IOT)-18-03-2023-(Reg).pdf'
+  },
+  {
+    id: '78',
+    title: 'Engineering Graphics Question Paper (Aug 2024)',
+    subject: 'engineering-graphics',
+    subjectCode: '9BC01',
+    uploadedBy: 'Akanksha Reddy',
+    uploadDate: '2025-07-21',
+    fileSize: '264 KB',
+    description: 'Regular Examination Question Paper (CSE, IT, CS, AIML, DS, IOT)',
+    fileName: 'A22-EG-(CSE,IT,CS,AIML,DS,IOT)-05-08-2024-(Regular).pdf'
+  },
+  {
+    id: '79',
+    title: 'Engineering Graphics Question Paper (Aug 2023)',
+    subject: 'engineering-graphics',
+    subjectCode: '9BC01',
+    uploadedBy: 'Akanksha Reddy',
+    uploadDate: '2025-07-21',
+    fileSize: '343 KB',
+    description: 'Regular Examination Question Paper (CSE, CS, AIML, DS, IOT, IT)',
+    fileName: 'A22-EG-(CSE,CS,AIML,DS,IOT,IT)-21-08-2023-(Regular).pdf'
+  },
+  {
+    id: '80',
+    title: 'Engineering Graphics Question Paper (Mar 2023)',
+    subject: 'engineering-graphics',
+    subjectCode: '9BC01',
+    uploadedBy: 'Akanksha Reddy',
+    uploadDate: '2025-07-21',
+    fileSize: '216 KB',
+    description: 'Regular Examination Question Paper (CE, EEE, ME, ECE, ECM)',
+    fileName: 'A22-EG-(CE,EEE,ME,ECE,ECM)-27-03-2023-(Regular).pdf'
+  },
+  {
+    id: '81',
+    title: 'Engineering Physics Question Paper (Aug 2024)',
+    subject: 'engineering-physics',
+    subjectCode: '9HC07',
+    uploadedBy: 'Akanksha Reddy',
+    uploadDate: '2025-07-21',
+    fileSize: '222 KB',
+    description: 'Regular Examination Question Paper (CSE, IT, CS, AIML, DS, IOT)',
+    fileName: 'A22-EP -(CSE,IT,CS,AIML,DS,IOT)-16-08-2024-(Regular).pdf'
+  },
+  {
+    id: '82',
+    title: 'Engineering Physics Question Paper (Sep 2023)',
+    subject: 'engineering-physics',
+    subjectCode: '9HC07',
+    uploadedBy: 'Akanksha Reddy',
+    uploadDate: '2025-07-21',
+    fileSize: '230 KB',
+    description: 'Regular Examination Question Paper (CSE, IT, CS, DS, AIML, IOT)',
+    fileName: 'A22-EP-(CSE,IT,CS,DS,AIML,IOT)-01-09-2023-(Regular).pdf'
+  },
+  {
+    id: '83',
+    title: 'Engineering Physics Question Paper (Mar 2023)',
+    subject: 'engineering-physics',
+    subjectCode: '9HC07',
+    uploadedBy: 'Akanksha Reddy',
+    uploadDate: '2025-07-21',
+    fileSize: '114 KB',
+    description: 'Regular Examination Question Paper (EEE, ECE, ECM)',
+    fileName: 'A22-EP-(EEE,ECE,ECM)-21-03-2023-(Regular).pdf'
+  },
+  {
+    id: '84',
+    title: 'Matrix Algebra and Calculus Question Paper (Mar 2023)',
+    subject: 'matrix-algebra-calculus',
+    subjectCode: '9HC11',
+    uploadedBy: 'Akanksha Reddy',
+    uploadDate: '2025-07-21',
+    fileSize: '305 KB',
+    description: 'Regular Examination Question Paper (CE, ECE, CS, IOT)',
+    fileName: 'A22-MAC-(CE,ECE,CS,IOT)-16-03-2023-(Reg).pdf'
+  },
+  {
+    id: '85',
+    title: 'Problem Solving Using C Question Paper (Feb 2023)',
+    subject: 'problem-solving-c',
+    subjectCode: '9FC01',
+    uploadedBy: 'Akanksha Reddy',
+    uploadDate: '2025-07-21',
+    fileSize: '65 KB',
+    description: 'Regular Examination Question Paper (CE, ECE, CS, IOT)',
+    fileName: 'A22-PSUC-(CE,ECE,CS,IOT)-24-02-2023-(Reg).pdf'
   }
 ];

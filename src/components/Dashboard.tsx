@@ -34,12 +34,12 @@ export default function Dashboard({ subjects, onSubjectClick }: DashboardProps) 
           Welcome to StudyShare
         </h1>
         <p className="text-xl text-white/80 max-w-2xl mx-auto leading-relaxed animate-fade-in" style={{ animationDelay: '0.3s' }}>
-          Browse and download presentations organized by subject. 
+          Browse and download resources organized by subject. 
           Find the study materials you need for your courses.
         </p>
         <div className="mt-6 flex justify-center animate-fade-in" style={{ animationDelay: '0.6s' }}>
           <div className="px-4 py-2 bg-white/10 backdrop-blur-sm border border-white/20 rounded-full text-white/70 text-sm">
-            ✨ Discover knowledge, one presentation at a time
+            ✨ Discover knowledge, one resource at a time
           </div>
         </div>
       </div>

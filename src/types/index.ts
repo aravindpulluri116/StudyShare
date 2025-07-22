@@ -1,4 +1,4 @@
-export interface Presentation {
+export interface Resource {
   id: string;
   title: string;
   subject: string;
@@ -15,7 +15,7 @@ export interface Subject {
   name: string;
   icon: string;
   color: string;
-  presentationCount: number;
+  resourceCount: number;
   description: string;
   subjectCode: string;
 }

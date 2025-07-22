@@ -13,7 +13,10 @@ import {
   Atom,
   Binary,
   Zap,
-  Beaker
+  Beaker,
+  Ruler,
+  Infinity,
+  BookText
 } from 'lucide-react';
 import { Subject } from '../types';
 
@@ -36,7 +39,10 @@ const iconMap = {
   Atom,
   Binary,
   Zap,
-  Beaker
+  Beaker,
+  Ruler,
+  Infinity,
+  BookText
 };
 
 export default function SubjectCard({ subject, onClick }: SubjectCardProps) {
@@ -72,9 +78,9 @@ export default function SubjectCard({ subject, onClick }: SubjectCardProps) {
           </div>
           <div className="text-right transform group-hover:scale-110 transition-transform duration-300">
             <div className="text-3xl font-bold text-white group-hover:text-blue-200 transition-colors duration-300">
-              {subject.presentationCount}
+              {subject.resourceCount}
             </div>
-            <div className="text-xs text-white/60">presentations</div>
+            <div className="text-xs text-white/60">resources</div>
           </div>
         </div>
         

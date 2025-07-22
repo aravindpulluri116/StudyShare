@@ -15,7 +15,7 @@ export default function Header() {
                 <h1 className="text-xl font-bold text-white group-hover:text-blue-200 transition-colors duration-300">
                   StudyShare
                 </h1>
-                <p className="text-xs text-white/70">Presentation Hub</p>
+                <p className="text-xs text-white/70">Resource Hub</p>
                 <Sparkles className="absolute -top-1 -right-6 h-3 w-3 text-yellow-400 animate-pulse opacity-75" />
               </div>
             </div>

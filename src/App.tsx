@@ -3,7 +3,7 @@ import Header from './components/Header';
 import Dashboard from './components/Dashboard';
 import SubjectView from './components/SubjectView';
 import Footer from './components/Footer';
-import { subjects, presentations } from './data/mockData';
+import { subjects, resources } from './data/mockData';
 
 type View = 'dashboard' | 'subject';
 
@@ -13,7 +13,7 @@ function App() {
 
   const selectedSubject = subjects.find(s => s.id === selectedSubjectId);
   
-  const filteredPresentations = presentations.filter(p => p.subject === selectedSubjectId);
+  const filteredResources = resources.filter(r => r.subject === selectedSubjectId);
 
   const handleSubjectClick = (subjectId: string) => {
     setSelectedSubjectId(subjectId);
@@ -36,7 +36,7 @@ function App() {
 
       <Header />
       
-      <main className="flex-1 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 relative z-10">
+      <main className="flex-1 container mx-auto px-4 py-8">
         <div className={`transition-all duration-700 ease-in-out ${currentView === 'dashboard' ? 'animate-fade-in' : 'animate-slide-up'}`}>
           {currentView === 'dashboard' && (
             <Dashboard
@@ -48,7 +48,7 @@ function App() {
           {currentView === 'subject' && (
             <SubjectView
               subject={selectedSubject}
-              presentations={filteredPresentations}
+              resources={filteredResources}
               onBack={handleBackToDashboard}
             />
           )}

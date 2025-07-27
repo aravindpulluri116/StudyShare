@@ -30,7 +30,7 @@ export default function ResourceCard({ resource }: ResourceCardProps) {
   };
 
   return (
-    <div className="group bg-white/10 backdrop-blur-sm border border-white/20 rounded-2xl p-6 hover:bg-white/20 transition-all duration-500 transform hover:scale-[1.02] hover:shadow-2xl hover:shadow-blue-500/20 shimmer-effect relative overflow-hidden animate-slide-up">
+    <div className="group bg-white/10 backdrop-blur-sm border border-white/20 rounded-2xl p-6 hover:bg-white/20 transition-all duration-500 transform hover:scale-[1.02] hover:shadow-2xl hover:shadow-blue-500/20 shimmer-effect relative overflow-hidden animate-slide-up h-64 w-full">
       {/* Animated background */}
       <div className="absolute inset-0 bg-gradient-to-br from-blue-500/5 via-purple-500/5 to-pink-500/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500 rounded-2xl"></div>
       

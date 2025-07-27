@@ -59,7 +59,7 @@ export default function SubjectCard({ subject, onClick }: SubjectCardProps) {
       onClick={onClick}
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
-      className="group cursor-pointer bg-white/10 backdrop-blur-sm border border-white/20 rounded-2xl p-8 hover:bg-white/20 transition-all duration-500 transform hover:scale-105 hover:shadow-2xl hover:shadow-purple-500/20 shimmer-effect relative overflow-hidden h-80"
+      className="group cursor-pointer bg-white/10 backdrop-blur-sm border border-white/20 rounded-2xl p-8 hover:bg-white/20 transition-all duration-500 transform hover:scale-105 hover:shadow-2xl hover:shadow-purple-500/20 shimmer-effect relative overflow-hidden h-80 w-full"
     >
       {/* Animated background gradient */}
       <div className={`absolute inset-0 bg-gradient-to-br ${subject.color} opacity-0 group-hover:opacity-10 transition-opacity duration-500 rounded-2xl`}></div>
